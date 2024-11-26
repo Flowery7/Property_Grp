@@ -818,7 +818,15 @@ In addition, our maintenance services cover everything from routine repairs to p
   }
 </script>
   
-   
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+      img.setAttribute('loading', 'lazy');
+    });
+  });
+</script>
+ 
 
 <!-- Footer Section -->
 <footer style="background-color: #333; color: #fff; padding: 20px 0;">
